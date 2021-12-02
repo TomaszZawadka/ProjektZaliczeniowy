@@ -1,0 +1,60 @@
+.container_countdown {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-image: url("https://p.kindpng.com/picc/s/162-1624832_nba-finals-logo-white-hd-png-download.png");
+    background-size: contain;
+    background-repeat: repeat;
+    margin-top: 20px;
+}
+
+.countdown-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    color: black;
+}
+
+.countdown-wrapper h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    text-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown div {
+    width: 13rem;
+    height: 13rem;
+    background: none;
+    margin: 0 4rem 12rem 4rem;
+    font-size: 7rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.24rem;
+
+}
+
+.countdown div::after {
+    content: attr(data-content);
+    font-size: 2.2rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 15rem;
+}
